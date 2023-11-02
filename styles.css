@@ -8,4 +8,21 @@ body {
     margin: 0 auto;
     max-width: 960px;
     width: 100%;
+
+    /*added */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
+
+
+ nav ul {
+    list-style: none; /* Remove default bullet points */
+    padding: 0;
+    display: flex; /* Display navigation links horizontally */
+} 
+
+ nav li {
+    margin-right: 20px; /* Adjust spacing between navigation links */
+} 
+
