@@ -5,7 +5,8 @@ window.addEventListener("load", (event) => {
     emailForm.addEventListener("submit", function (e) {
       e.preventDefault();
   
-      const emailAddress = document.getElementById("email").value;
+      const emailInput = document.getElementById("email"); // Get the email input field
+      const emailAddress = emailInput.value;
   
       // Check that email address is valid
       if (emailAddress !== "") {
@@ -14,10 +15,9 @@ window.addEventListener("load", (event) => {
           emailAddress +
           " has been added to our mailing list!";
   
-        emailInput.value = "";
+        emailInput.value = ""; // Clear the email input field
       } else {
         msg.textContent = "Please enter a valid email address.";
       }
     });
   });
-  
